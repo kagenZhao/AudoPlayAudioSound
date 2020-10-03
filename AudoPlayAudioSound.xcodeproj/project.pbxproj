@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D8D52CC25277429003DE68A /* noSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D8D52CB25277429003DE68A /* noSound.wav */; };
+		3D8F6A2A252815AA008502F6 /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8F6A29252815AA008502F6 /* LaunchAtLogin.framework */; };
+		3D8F6A2B252815AA008502F6 /* LaunchAtLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8F6A29252815AA008502F6 /* LaunchAtLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D8F6A30252816A3008502F6 /* LaunchAtLogin.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D8F6A2F252816A3008502F6 /* LaunchAtLogin.framework.dSYM */; };
+		3DB8F10A2526EC5200FE0D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8F1092526EC5200FE0D81 /* AppDelegate.swift */; };
+		3DB8F10C2526EC5200FE0D81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8F10B2526EC5200FE0D81 /* ContentView.swift */; };
+		3DB8F10E2526EC5300FE0D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB8F10D2526EC5300FE0D81 /* Assets.xcassets */; };
+		3DB8F1112526EC5300FE0D81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB8F1102526EC5300FE0D81 /* Preview Assets.xcassets */; };
+		3DB8F1142526EC5300FE0D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB8F1122526EC5300FE0D81 /* Main.storyboard */; };
+		3DB8F1202526F01000FE0D81 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8F11F2526F01000FE0D81 /* SoundManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D8F6A2C252815AA008502F6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D8F6A2B252815AA008502F6 /* LaunchAtLogin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D8F6A2E25281675008502F6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				3D8F6A30252816A3008502F6 /* LaunchAtLogin.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D8D52CB25277429003DE68A /* noSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = noSound.wav; sourceTree = "<group>"; };
+		3D8F6A29252815AA008502F6 /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
+		3D8F6A2F252816A3008502F6 /* LaunchAtLogin.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = LaunchAtLogin.framework.dSYM; path = Carthage/Build/Mac/LaunchAtLogin.framework.dSYM; sourceTree = "<group>"; };
+		3DB8F1062526EC5200FE0D81 /* AudoPlayAudioSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudoPlayAudioSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB8F1092526EC5200FE0D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DB8F10B2526EC5200FE0D81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3DB8F10D2526EC5300FE0D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB8F1102526EC5300FE0D81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DB8F1132526EC5300FE0D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DB8F1152526EC5300FE0D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB8F1162526EC5300FE0D81 /* AudoPlayAudioSound.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudoPlayAudioSound.entitlements; sourceTree = "<group>"; };
+		3DB8F11F2526F01000FE0D81 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB8F1032526EC5200FE0D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8F6A2A252815AA008502F6 /* LaunchAtLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D8F6A28252815AA008502F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D8F6A29252815AA008502F6 /* LaunchAtLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DB8F0FD2526EC5200FE0D81 = {
+			isa = PBXGroup;
+			children = (
+				3D8F6A2F252816A3008502F6 /* LaunchAtLogin.framework.dSYM */,
+				3DB8F1082526EC5200FE0D81 /* AudoPlayAudioSound */,
+				3DB8F1072526EC5200FE0D81 /* Products */,
+				3D8F6A28252815AA008502F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB8F1072526EC5200FE0D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB8F1062526EC5200FE0D81 /* AudoPlayAudioSound.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB8F1082526EC5200FE0D81 /* AudoPlayAudioSound */ = {
+			isa = PBXGroup;
+			children = (
+				3DB8F1092526EC5200FE0D81 /* AppDelegate.swift */,
+				3DB8F10B2526EC5200FE0D81 /* ContentView.swift */,
+				3DB8F11F2526F01000FE0D81 /* SoundManager.swift */,
+				3D8D52CB25277429003DE68A /* noSound.wav */,
+				3DB8F10D2526EC5300FE0D81 /* Assets.xcassets */,
+				3DB8F1122526EC5300FE0D81 /* Main.storyboard */,
+				3DB8F1152526EC5300FE0D81 /* Info.plist */,
+				3DB8F1162526EC5300FE0D81 /* AudoPlayAudioSound.entitlements */,
+				3DB8F10F2526EC5300FE0D81 /* Preview Content */,
+			);
+			path = AudoPlayAudioSound;
+			sourceTree = "<group>";
+		};
+		3DB8F10F2526EC5300FE0D81 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3DB8F1102526EC5300FE0D81 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB8F1052526EC5200FE0D81 /* AudoPlayAudioSound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB8F1192526EC5300FE0D81 /* Build configuration list for PBXNativeTarget "AudoPlayAudioSound" */;
+			buildPhases = (
+				3DB8F1022526EC5200FE0D81 /* Sources */,
+				3DB8F1032526EC5200FE0D81 /* Frameworks */,
+				3DB8F1042526EC5200FE0D81 /* Resources */,
+				3D8F6A2C252815AA008502F6 /* Embed Frameworks */,
+				3D8F6A31252816EF008502F6 /* ShellScript */,
+				3D8F6A2E25281675008502F6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudoPlayAudioSound;
+			productName = AudoPlayAudioSound;
+			productReference = 3DB8F1062526EC5200FE0D81 /* AudoPlayAudioSound.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB8F0FE2526EC5200FE0D81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					3DB8F1052526EC5200FE0D81 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 3DB8F1012526EC5200FE0D81 /* Build configuration list for PBXProject "AudoPlayAudioSound" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB8F0FD2526EC5200FE0D81;
+			productRefGroup = 3DB8F1072526EC5200FE0D81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB8F1052526EC5200FE0D81 /* AudoPlayAudioSound */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB8F1042526EC5200FE0D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB8F1142526EC5300FE0D81 /* Main.storyboard in Resources */,
+				3D8D52CC25277429003DE68A /* noSound.wav in Resources */,
+				3DB8F1112526EC5300FE0D81 /* Preview Assets.xcassets in Resources */,
+				3DB8F10E2526EC5300FE0D81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D8F6A31252816EF008502F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Carthage/Build/Mac/LaunchAtLogin.framework/Resources/copy-helper.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB8F1022526EC5200FE0D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB8F10C2526EC5200FE0D81 /* ContentView.swift in Sources */,
+				3DB8F10A2526EC5200FE0D81 /* AppDelegate.swift in Sources */,
+				3DB8F1202526F01000FE0D81 /* SoundManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DB8F1122526EC5300FE0D81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB8F1132526EC5300FE0D81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB8F1172526EC5300FE0D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DB8F1182526EC5300FE0D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3DB8F11A2526EC5300FE0D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AudoPlayAudioSound/AudoPlayAudioSound.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AudoPlayAudioSound/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = AudoPlayAudioSound/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kagenz.AudoPlayAudioSound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3DB8F11B2526EC5300FE0D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AudoPlayAudioSound/AudoPlayAudioSound.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AudoPlayAudioSound/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = AudoPlayAudioSound/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kagenz.AudoPlayAudioSound;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB8F1012526EC5200FE0D81 /* Build configuration list for PBXProject "AudoPlayAudioSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB8F1172526EC5300FE0D81 /* Debug */,
+				3DB8F1182526EC5300FE0D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB8F1192526EC5300FE0D81 /* Build configuration list for PBXNativeTarget "AudoPlayAudioSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB8F11A2526EC5300FE0D81 /* Debug */,
+				3DB8F11B2526EC5300FE0D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB8F0FE2526EC5200FE0D81 /* Project object */;
+}
