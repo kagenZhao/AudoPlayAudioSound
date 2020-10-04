@@ -28,16 +28,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
         
         if let button = self.statusBarItem.button {
-            button.image = NSImage(named: "icon")
+            button.image = NSImage(named: "menuIcon")
             button.action = #selector(togglePopover(_:))
         }
         
         NSApp.activate(ignoringOtherApps: true)
-        
-        let id = "\(Bundle.main.bundleIdentifier!)-LaunchAtLoginHelper"
-        let jobs = (SMCopyAllJobDictionaries(kSMDomainUserLaunchd).takeRetainedValue() as? [[String: AnyObject]])
-        let job = jobs!.first { $0["Label"] as! String == id }
-        print(job!)
     }
     
     @objc private func togglePopover(_ sender: Any?) {
